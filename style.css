@@ -1,0 +1,110 @@
+:root{
+    --primary: #5B83A6;
+    --secondary: #293959;
+    --tertiary: #262626;
+    --off-white: #F7F7F7;
+}
+
+html{
+    font-size: 125%;
+    color: var(--tertiary);
+    background-color: var(--off-white);
+}
+
+body{
+    /* Body elements default to have margins. No good for styling ;) */
+    margin: 0;
+
+    font-family: 'Source Sans Pro', sans-serif;
+
+    line-height: 1.4;
+    
+}
+
+header{
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.top-header{
+
+    margin: 0;
+
+    /* View Height is a neato value! I want the image to take up your entire viewport, so instead of using %, vh makes the most sense */
+    height: 100vh;
+    background-image: url(header-img.jpg);
+    background-color: rgba(black, .2);
+    background-position: center center;
+    background-blend-mode: overlay;
+    background-size: cover;
+    position: relative;
+
+    
+    font-size: 1.75em;
+    color: white;
+
+
+    /* Creating the clipped v shape with the header image */
+    padding: 4em 1em calc(3em + 3.5vw);
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      100% calc(100% - 3.5vw),
+      50% 100%,
+      0 calc(100% - 3.5vw)
+    );
+}
+
+.welcome-message{
+    margin: 0;
+}
+
+#greeting{
+
+}
+
+#sub-greeting{
+
+}
+
+#signed-greeting{
+
+}
+
+#main-container{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+    max-width: 50rem;
+}
+
+#intro{
+    display: flex;
+}
+
+#experience{
+
+}
+
+.technical-skills{
+
+}
+
+.soft-skills{
+
+}
+
+.social-container{
+
+}
+
+footer{
+    color: var(--off-white);
+    background-color: var(--tertiary);
+    text-align: center;
+}
+
+#sassy-aside{
+    display: block;
+    margin: 0;
+}
