@@ -31,7 +31,7 @@ header{
 
     /* View Height is a neato value! I want the image to take up your entire viewport, so instead of using %, vh makes the most sense */
     height: 100vh;
-    background-image: url(header-img.jpg);
+    background-image: url(kristoff-traintracks-unsplash-header.jpg);
     background-color: rgba(black, .2);
     background-position: center center;
     background-blend-mode: overlay;
