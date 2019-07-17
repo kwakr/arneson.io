@@ -1,0 +1,25 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Me: Kristoff Arneson
+    Site: arneson.io
+    Twitter: @kwakr
+    Location: Virginia, US; Remote, Global
+
+# THANKS
+
+    Stack Overflow
+    Caffeine
+    
+
+# SITE
+
+    Last update: 2019/07/17
+    Standards: HTML5, CSS3, Flexbox
+    Components:
+      - Front-end: CSS
+      - Back-end: 
+    Tools: 
+    Software: VS Code, Git
