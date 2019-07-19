@@ -44,6 +44,7 @@ header{
 
 
     /* Creating the clipped v shape with the header image */
+    /* Working with calc in CSS is so nice, helps remove a lot of guess work for breakpoints or other dynamic elements! */
     padding: 4em 1em calc(3em + 3.5vw);
     clip-path: polygon(
       0 0,
@@ -80,6 +81,30 @@ header{
 
 #intro{
     display: flex;
+}
+
+#headshot{
+    max-width: 100%;
+    padding: 1em;
+}
+
+.button{
+    display: block;
+    border: 4px solid var(--primary);
+    border-radius: 0.2em;
+    padding: 0.5em;
+    text-align: center;
+    text-decoration: none;
+    color: var(--primary);
+    font-family: 'Chakra Petch', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    font-weight: 900;
+}
+
+.button:hover{
+    background-color: var(--primary);
+    color: var(--off-white);    
 }
 
 #experience{
