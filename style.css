@@ -9,6 +9,8 @@ html{
     font-size: 125%;
     color: var(--tertiary);
     background-color: var(--off-white);
+
+    box-sizing: border-box;
 }
 
 body{
@@ -79,8 +81,18 @@ header{
     max-width: 50rem;
 }
 
-#intro{
+.flex-container{
     display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+@media all and (max-width: 600px) {
+    .flex-container{
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 
 #headshot{
@@ -107,15 +119,12 @@ header{
     color: var(--off-white);    
 }
 
-#experience{
-
+.project-card{
+    display: block;
+    border: 4px solid var(--secondary);
 }
 
-.technical-skills{
-
-}
-
-.soft-skills{
+.project-card.highlight{
 
 }
 
