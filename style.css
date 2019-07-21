@@ -11,6 +11,8 @@ html{
     background-color: var(--off-white);
 
     box-sizing: border-box;
+
+    overflow-x: hidden;
 }
 
 body{
@@ -32,7 +34,7 @@ header{
     margin: 0;
 
     /* View Height is a neato value! I want the image to take up most of your entire viewport, so instead of using %, vh makes the most sense */
-    height: 75vh;
+    min-height: 75vh;
     background-image: url(img/kristoff-traintracks-unsplash-header.jpg);
     background-color: rgba(black, .2);
     background-position: center center;
@@ -55,6 +57,7 @@ header{
       50% 100%,
       0 calc(100% - 3.5vw)
     );
+
 }
 
 .welcome-message{
@@ -96,8 +99,13 @@ header{
 }
 
 #headshot{
+    text-align: center;
     max-width: 100%;
     padding: 1em;
+}
+
+#headshot img{
+    max-width: 100%;
 }
 
 .button{
@@ -136,6 +144,7 @@ footer{
     color: var(--off-white);
     background-color: var(--tertiary);
     text-align: center;
+    padding: 0.5em;
 }
 
 #sassy-aside{
