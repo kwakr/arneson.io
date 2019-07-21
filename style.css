@@ -96,6 +96,11 @@ header{
         flex-direction: column;
         justify-content: center;
     }
+
+    .top-header{
+        padding-top: 2em;
+    }
+    
 }
 
 #headshot{
