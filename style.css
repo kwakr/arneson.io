@@ -92,9 +92,10 @@ header{
 }
 
 .flex-element{
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    /* width: 50%; */
 }
 
 @media all and (max-width: 600px) {
@@ -103,13 +104,17 @@ header{
     }
 
     .flex-element{
-        width: 100%;
+        width: 100% !important;
     }
 
     .top-header{
         padding-top: 2em;
     }
     
+}
+
+.intro-content{
+    width: 50%;
 }
 
 #headshot{
@@ -140,12 +145,22 @@ header{
     color: var(--off-white);    
 }
 
+.button.card-btn{
+    margin-bottom: 0.5em;
+    margin-left: 0.1em;
+    padding: 0.25em;
+    font-size: 0.75em;
+}
+
 .project-card{
     border: 4px solid var(--secondary);
+    padding: 0.5em;
+    width: calc(50% - 1em);
+    margin-bottom: 1em;
+}
 
-    padding: 1em;
-    margin-left: auto;
-    margin-right: auto;
+.card-links{
+
 }
 
 .project-card.highlight{
@@ -161,6 +176,10 @@ footer{
     background-color: var(--tertiary);
     text-align: center;
     padding: 0.5em;
+}
+
+footer a{
+    color: var(--off-white);
 }
 
 #sassy-aside{
